@@ -1,46 +1,47 @@
 print("Calculator")
 
 
-def toplama(x, y):
+## defining variables
+def addition(x, y):
     return x + y
 
-def çıkarma(x, y):
+def subtraction(x, y):
     return x - y
 
 
-def çarpma(x, y):
+def multiplication(x, y):
     return x * y
 
 
-def bölme(x, y):
+def division(x, y):
     return x / y
 
-print("Yapılacak işlem")
 
-print("1 Toplama")
-print("2 çıkarma")
-print("3 çarpma")
-print("4 bölme")
+## operation selection
+print("Select your operation")
 
-işlem =input("Seçim yapınız 1/2/3/4:")
+print("1 addition")
+print("2 subtraction")
+print("3 multiplication")
+print("4 division")
 
-sayı1 =(input("1. Sayı"))
-sayı2 =(input("2. Sayı"))
+## operation input
+operation =input("Enter 1/2/3/4:")
+
+number1 =int(input("1. first number"))
+number2 =int(input("2. second number"))
 
 
-if işlem == "1":
-    print(sayı1,"+",sayı2,"=", toplama(sayı1, sayı2))
+if operation == "1":
+    print(number1,"+",number2,"=", addition(number1, number2))
     
-elif işlem == "2":
-    print(sayı1, "-" ,sayı2, "=", çıkarma(sayı1, sayı2))
+elif operation == "2":
+    print(number1, "-" ,number2, "=", subtraction(number1, number2))
 
 
-elif işlem == "3":
-    print(sayı1, "*", sayı2, "=", çarpma(sayı1,sayı2))
+elif operation == "3":
+    print(number1, "*", number2, "=", multiplication(number1,number2))
 
 
-elif işlem == "4":
-    print(sayı1, "/" ,sayı2, "=", bölme(sayı1, sayı2))
-
-
-
+elif operation == "4":
+    print(number1, "/" ,number2, "=", division(number1, number2))
