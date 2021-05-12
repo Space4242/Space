@@ -1,0 +1,46 @@
+print("Calculator")
+
+
+def toplama(x, y):
+    return x + y
+
+def çıkarma(x, y):
+    return x - y
+
+
+def çarpma(x, y):
+    return x * y
+
+
+def bölme(x, y):
+    return x / y
+
+print("Yapılacak işlem")
+
+print("1 Toplama")
+print("2 çıkarma")
+print("3 çarpma")
+print("4 bölme")
+
+işlem =input("Seçim yapınız 1/2/3/4:")
+
+sayı1 =(input("1. Sayı"))
+sayı2 =(input("2. Sayı"))
+
+
+if işlem == "1":
+    print(sayı1,"+",sayı2,"=", toplama(sayı1, sayı2))
+    
+elif işlem == "2":
+    print(sayı1, "-" ,sayı2, "=", çıkarma(sayı1, sayı2))
+
+
+elif işlem == "3":
+    print(sayı1, "*", sayı2, "=", çarpma(sayı1,sayı2))
+
+
+elif işlem == "4":
+    print(sayı1, "/" ,sayı2, "=", bölme(sayı1, sayı2))
+
+
+
